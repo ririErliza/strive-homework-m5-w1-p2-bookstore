@@ -7,8 +7,8 @@ function App() {
   return (
     <div>
       <CustomNavbar
-        title="Strivestaurant"
-        payoff="Best Pasta on the Internet"
+        title="WhatBook"
+       
       />
       <Home />
     </div>
@@ -16,5 +16,3 @@ function App() {
 }
 
 export default App
-© 2022 GitHub, Inc.
-Ter
