@@ -1,5 +1,6 @@
 import { Component } from 'react'
 import { Container, Row, Col, Card, Button } from 'react-bootstrap'
+import Books from '../Data/Books.json'
 
 class LatestRelease extends Component{
 
@@ -7,19 +8,30 @@ class LatestRelease extends Component{
         return(
 <Container>
     <Row>
-        <Col xs={6} md={4}>
-            <Card style={{ width: '18rem' }}>
-                <Card.Img variant="top" src="holder.js/100px180" />
-                <Card.Body>
-                    <Card.Title>Card Title</Card.Title>
-                    <Card.Text>
-                   
-                    </Card.Text>
+        {Books.map((book)=>(
+
+            <Col xs={6} md={3} className="mb-2">
+                <Card className="h-100">
+                    <Card.Img variant="top" src={book.img}/>
+                    <Card.Body>
+                        <Card.Title className="text-truncate">{book.title}</Card.Title>
+                        <Card.Text>
+                            <p>{book.price}</p>
+                            <p>{book.category}</p>
+                        </Card.Text>
+                        
+                    </Card.Body>
+                    <Card.Footer>
                     <Button variant="primary">Buy</Button>
-                </Card.Body>
-                
-            </Card>
+                    </Card.Footer>
+                    
+                </Card>
             </Col>
+
+        ))
+
+        }
+        
             
             
             

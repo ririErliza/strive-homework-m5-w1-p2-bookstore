@@ -3,7 +3,7 @@
 const MyFooter = () => (
 <>
    
-    <footer className="page-footer font-small blue pt-4">
+    <footer className="page-footer font-small pt-3 pl-4 mt-5 bg-secondary">
     
 
       <div className="container-fluid text-center text-md-left">
