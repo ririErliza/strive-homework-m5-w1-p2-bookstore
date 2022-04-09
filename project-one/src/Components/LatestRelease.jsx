@@ -1,5 +1,5 @@
 import { Component } from 'react'
-import { Container, Row, Col, Card, Button } from 'react-bootstrap'
+import { Container, Row, Col, Card } from 'react-bootstrap'
 import Books from '../Data/Books.json'
 
 class LatestRelease extends Component{
@@ -8,6 +8,7 @@ class LatestRelease extends Component{
 
         return(
 <Container>
+    <h4> Latest Release</h4>
     <Row>
         {Books.map((book)=>(
         
